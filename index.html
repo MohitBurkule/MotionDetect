@@ -39,7 +39,14 @@
   <li>Z-axis: <span id="Accelerometer_z">0</span><span> m/s<sup>2</sup></span></li>
   <li>Data Interval: <span id="Accelerometer_i">0</span><span> ms</span></li>
 </ul>
-
+  
+<h4>Gravity</h4>
+<ul>
+  <li>X-axis: <span id="Gravity_x">0</span><span> m/s<sup>2</sup></span></li>
+  <li>Y-axis: <span id="Gravity_y">0</span><span> m/s<sup>2</sup></span></li>
+  <li>Z-axis: <span id="Gravity_z">0</span><span> m/s<sup>2</sup></span></li>
+</ul>
+  
 <h4>Accelerometer-including gravity</h4>
 
 <ul>
@@ -87,6 +94,9 @@ function handleMotion(event) {
   updateFieldIfNotNull('Accelerometer_y', event.acceleration.y);
   updateFieldIfNotNull('Accelerometer_z', event.acceleration.z);
 
+  updateFieldIfNotNull('Gravity_x', event.accelerationIncludingGravity.x-event.acceleration.x);
+  updateFieldIfNotNull('Gravity_y', event.accelerationIncludingGravity.y-event.acceleration.y);
+  updateFieldIfNotNull('Gravity_z', event.accelerationIncludingGravity.z-event.acceleration.z);
   updateFieldIfNotNull('Accelerometer_i', event.interval, 2);
 
   updateFieldIfNotNull('Gyroscope_z', event.rotationRate.alpha);
