@@ -103,22 +103,22 @@ rotrate['z'].push(event.rotationRate.alpha.toFixed(precision))
 }
   
 function handleMotion(event) {
-  updateFieldIfNotNull('Accelerometer_gx', event.accelerationIncludingGravity.x);
-  updateFieldIfNotNull('Accelerometer_gy', event.accelerationIncludingGravity.y);
-  updateFieldIfNotNull('Accelerometer_gz', event.accelerationIncludingGravity.z);
+  //updateFieldIfNotNull('Accelerometer_gx', event.accelerationIncludingGravity.x);
+  //updateFieldIfNotNull('Accelerometer_gy', event.accelerationIncludingGravity.y);
+  //updateFieldIfNotNull('Accelerometer_gz', event.accelerationIncludingGravity.z);
 
-  updateFieldIfNotNull('Accelerometer_x', event.acceleration.x);
-  updateFieldIfNotNull('Accelerometer_y', event.acceleration.y);
-  updateFieldIfNotNull('Accelerometer_z', event.acceleration.z);
+  //updateFieldIfNotNull('Accelerometer_x', event.acceleration.x);
+  //updateFieldIfNotNull('Accelerometer_y', event.acceleration.y);
+  //updateFieldIfNotNull('Accelerometer_z', event.acceleration.z);
 
-  updateFieldIfNotNull('Gravity_x', event.accelerationIncludingGravity.x-event.acceleration.x);
-  updateFieldIfNotNull('Gravity_y', event.accelerationIncludingGravity.y-event.acceleration.y);
-  updateFieldIfNotNull('Gravity_z', event.accelerationIncludingGravity.z-event.acceleration.z);
-  updateFieldIfNotNull('Accelerometer_i', event.interval, 2);
+  //updateFieldIfNotNull('Gravity_x', event.accelerationIncludingGravity.x-event.acceleration.x);
+  //updateFieldIfNotNull('Gravity_y', event.accelerationIncludingGravity.y-event.acceleration.y);
+  //updateFieldIfNotNull('Gravity_z', event.accelerationIncludingGravity.z-event.acceleration.z);
+  //updateFieldIfNotNull('Accelerometer_i', event.interval, 2);
 
-  updateFieldIfNotNull('Gyroscope_z', event.rotationRate.alpha);
-  updateFieldIfNotNull('Gyroscope_x', event.rotationRate.beta);
-  updateFieldIfNotNull('Gyroscope_y', event.rotationRate.gamma);
+  //updateFieldIfNotNull('Gyroscope_z', event.rotationRate.alpha);
+  //updateFieldIfNotNull('Gyroscope_x', event.rotationRate.beta);
+  //updateFieldIfNotNull('Gyroscope_y', event.rotationRate.gamma);
   store_values(event)
   incrementEventCount();
 }
