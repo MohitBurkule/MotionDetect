@@ -70,7 +70,7 @@
 <script>
 
   async function processModel(){
-  const model = await tf.loadLayersModel('https://mohitburkule.github.io/MotionDetect/multicatmodel/model.json');
+  const model = await tf.loadLayersModel('https://mohitburkule.github.io/MotionDetect/model.json');
   console.log("model loaded")
   console.log(model.predict(tf.tensor([[0,0],], [1, 2])).dataSync());//[1,1],[3,0]
 
