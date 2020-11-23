@@ -114,9 +114,17 @@ return [math.min(dict['x']),math.min(dict['y']),math.min(dict['z'])];
 	
 function getFeature(){
 var gravity_max=getmax(gravity);	
-var gravity_max_x,gravity_max_y,gravity_max_z=gravity_max[0],gravity_max[1],gravity_max[2]
-var rotrate_max_x,rotrate_max_y,rotrate_max_z=getmax(rotrate);
-var useracc_max_x,useracc_max_y,useracc_max_z=getmax(useracc);
+var gravity_max_x=gravity_max[0];
+var gravity_max_y=gravity_max[1];
+var gravity_max_z=gravity_max[2];
+var rotrate_max=getmax(rotrate);	
+var rotrate_max_x=rotrate_max[0];
+var rotrate_max_y=rotrate_max[1];
+var rotrate_max_z=rotrate_max[2];
+var useracc_max=getmax(useracc);	
+var useracc_max_x=useracc_max[0];
+var useracc_max_y=useracc_max[1];
+var useracc_max_z=useracc_max[2];
 
 var gravity_avg_x,gravity_avg_y,gravity_avg_z=getavg(gravity);
 var rotrate_avg_x,rotrate_avg_y,rotrate_avg_z=getavg(rotrate);
