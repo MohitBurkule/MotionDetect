@@ -113,7 +113,8 @@ return [math.min(dict['x']),math.min(dict['y']),math.min(dict['z'])];
 }	
 	
 function getFeature(){
-var gravity_max_x,gravity_max_y,gravity_max_z=getmax(gravity);
+var gravity_max=getmax(gravity);	
+var gravity_max_x,gravity_max_y,gravity_max_z=gravity_max[0],gravity_max[1],gravity_max[2]
 var rotrate_max_x,rotrate_max_y,rotrate_max_z=getmax(rotrate);
 var useracc_max_x,useracc_max_y,useracc_max_z=getmax(useracc);
 
