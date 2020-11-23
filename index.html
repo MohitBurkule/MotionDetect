@@ -87,7 +87,7 @@ function updateFieldIfNotNull(fieldName, value, precision=3){
     document.getElementById(fieldName).innerHTML = value.toFixed(precision);
 }
 
-function store_values(){
+function store_values(event){
 useracc['x'].push(event.acceleration.x)
 useracc['y'].push(event.acceleration.y)
 useracc['z'].push(event.acceleration.z)
@@ -119,6 +119,7 @@ function handleMotion(event) {
   updateFieldIfNotNull('Gyroscope_z', event.rotationRate.alpha);
   updateFieldIfNotNull('Gyroscope_x', event.rotationRate.beta);
   updateFieldIfNotNull('Gyroscope_y', event.rotationRate.gamma);
+  store_values(event)
   incrementEventCount();
 }
 
