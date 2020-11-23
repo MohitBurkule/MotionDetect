@@ -125,7 +125,6 @@ gravity_min_x,gravity_min_y,gravity_min_z=getmin(gravity);
 rotrate_min_x,rotrate_min_y,rotrate_min_z=getmin(rotrate);
 useracc_min_x,useracc_min_y,useracc_min_z=getmin(useracc);
 
-//ss std skew
 gravity_ss_x,gravity_ss_y,gravity_ss_z=getss(gravity);
 rotrate_ss_x,rotrate_ss_y,rotrate_ss_z=getss(rotrate);
 useracc_ss_x,useracc_ss_y,useracc_ss_z=getss(useracc);
@@ -138,8 +137,33 @@ gravity_skew_x,gravity_skew_y,gravity_skew_z=getskew(gravity);
 rotrate_skew_x,rotrate_skew_y,rotrate_skew_z=getskew(rotrate);
 useracc_skew_x,useracc_skew_y,useracc_skew_z=getskew(useracc);	
 	
+x=[
+  gravity_max_x,gravity_max_y,gravity_max_z,
+  rotrate_max_x,rotrate_max_y,rotrate_max_z,
+  useracc_max_x,useracc_max_y,useracc_max_z,
+	
+  gravity_avg_x,gravity_avg_y,gravity_avg_z,
+  rotrate_avg_x,rotrate_avg_y,rotrate_avg_z,
+  useracc_avg_x,useracc_avg_y,
+	
+  gravity_min_x,gravity_min_y,gravity_min_z,
+  rotrate_min_x,rotrate_min_y,rotrate_min_z,
+  useracc_min_x,useracc_min_y,useracc_min_z,
 	
 	
+  gravity_ss_x,gravity_ss_y,gravity_ss_z,
+  rotrate_ss_x,rotrate_ss_y,rotrate_ss_z,
+  useracc_ss_x,useracc_ss_y,useracc_ss_z,
+  	
+  gravity_std_x,gravity_std_y,gravity_std_z,
+  rotrate_std_x,rotrate_std_y,rotrate_std_z,
+  useracc_std_x,useracc_std_y,
+  
+  gravity_skew_x,gravity_skew_y,gravity_skew_z,
+  rotrate_skew_x,rotrate_skew_y,rotrate_skew_z,
+  useracc_skew_x,
+]	
+console.log(x.length,x)	
 }
 	
 function handleOrientation(event) {
@@ -216,7 +240,8 @@ demo_button.onclick = function(e) {
     demo_button.classList.add('btn-success');
     demo_button.classList.remove('btn-danger');
     is_running = false;
-    console.log(useracc)
+    console.log(useracc);
+    getFeature();		  
   }else{
     window.addEventListener("devicemotion", handleMotion);
     window.addEventListener("deviceorientation", handleOrientation);
