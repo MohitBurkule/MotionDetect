@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-02-12T04:43:32.619Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.150 Safari/537.36 Edg/88.0.705.63" etag="FRTALCEIs470eu0phe8G" version="14.3.1" type="github">
+<mxfile host="app.diagrams.net" modified="2021-02-12T04:44:03.181Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.150 Safari/537.36 Edg/88.0.705.63" etag="l9svAGWygfnPy9bLFPHc" version="14.3.1" type="github">
   <diagram id="mfNoVJrlFyGqlS51hNdY" name="Page-1">
-    <mxGraphModel dx="1090" dy="1746" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1090" dy="646" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -8,37 +8,37 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="QYIhzdTI2tLNxb6TSlcx-1" value="Dataset" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="590" y="80" width="120" height="60" as="geometry" />
+          <mxGeometry x="590" y="140" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="QYIhzdTI2tLNxb6TSlcx-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="QYIhzdTI2tLNxb6TSlcx-2" target="QYIhzdTI2tLNxb6TSlcx-10">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="QYIhzdTI2tLNxb6TSlcx-2" value="Find correlations&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="590" y="220" width="120" height="60" as="geometry" />
+          <mxGeometry x="590" y="260" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="QYIhzdTI2tLNxb6TSlcx-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="QYIhzdTI2tLNxb6TSlcx-4" target="QYIhzdTI2tLNxb6TSlcx-28">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="QYIhzdTI2tLNxb6TSlcx-4" value="Signal" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="100" y="-60" width="120" height="60" as="geometry" />
+          <mxGeometry x="100" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="QYIhzdTI2tLNxb6TSlcx-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="QYIhzdTI2tLNxb6TSlcx-5" target="QYIhzdTI2tLNxb6TSlcx-1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="QYIhzdTI2tLNxb6TSlcx-5" value="Feature Extraction" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="350" y="80" width="120" height="60" as="geometry" />
+          <mxGeometry x="350" y="140" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="QYIhzdTI2tLNxb6TSlcx-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="QYIhzdTI2tLNxb6TSlcx-10" target="QYIhzdTI2tLNxb6TSlcx-12">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="QYIhzdTI2tLNxb6TSlcx-10" value="(Recursive Feature Elimination) &lt;br&gt;Feature selection" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="350" y="220" width="120" height="60" as="geometry" />
+          <mxGeometry x="350" y="260" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="QYIhzdTI2tLNxb6TSlcx-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="QYIhzdTI2tLNxb6TSlcx-12" target="QYIhzdTI2tLNxb6TSlcx-14">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="QYIhzdTI2tLNxb6TSlcx-12" value="Scaling and Normalization" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="110" y="220" width="120" height="60" as="geometry" />
+          <mxGeometry x="110" y="260" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="QYIhzdTI2tLNxb6TSlcx-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="QYIhzdTI2tLNxb6TSlcx-14" target="QYIhzdTI2tLNxb6TSlcx-16">
           <mxGeometry relative="1" as="geometry" />
@@ -80,7 +80,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="QYIhzdTI2tLNxb6TSlcx-28" value="Outlier removal" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="100" y="80" width="120" height="60" as="geometry" />
+          <mxGeometry x="100" y="140" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
